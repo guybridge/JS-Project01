@@ -6,8 +6,6 @@
 // Create the array of quote objects and name it quotes
 let quotes = [quote1, quote2, quote3, quote4, quote5, quote6];
 
-
-
 // Create the getRandomQuote function and name it getRandomQuote
 function getRandomQuote()
 {
@@ -21,6 +19,7 @@ function printQuote()
     // change the background colour
     changeBackgroundColour();
     
+    // Store the return value of the getRandonQuote object
     const randomQuote = getRandomQuote();
     // Select the quote and source
     let quote = document.querySelector("p.quote");
@@ -28,7 +27,7 @@ function printQuote()
 
     // Assing the quote and the author
     quote.textContent = randomQuote.quote;
-    author.textContent = randomQuote.author;
+    author.textContent = randomQuote.source;
     
     // Check if we have the optional data and set
     if(randomQuote.date !== "")
@@ -42,9 +41,11 @@ function printQuote()
         }
 }
 
+// Method to change the background colour of the page
 function changeBackgroundColour()
 {
-    const colours = ["red", "blue", "green", "purple", "cyan"]
+    // Create an array of material colours
+    const colours = ["#03A9F4", "#E91E63", "#009688", "#607D8B", "#2196F3", "#4CAF50", "#3F51B5"]
     let randomColour = Math.floor(Math.random() * colours.length);
     
     document.body.style.backgroundColor = colours[randomColour];
