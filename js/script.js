@@ -18,8 +18,26 @@ function getRandomQuote()
 // Create the printQuote funtion and name it printQuote
 function printQuote()
 {
-    let quote = document.getElementsByClassName("quote");
-    quote.innerHTML = "Test";
+    randomQuote = quotes[getRandomQuote()];
+    
+    let quote = document.querySelector("p.quote");
+    let author = document.querySelector("p.source");
+
+
+    // Assing the quote and the author
+    quote.textContent = randomQuote.quote;
+    author.textContent = randomQuote.author;
+    
+    // Check if we have the optional data and set
+    if(randomQuote.date !== "")
+        {
+            author.innerHTML = author.innerHTML + "<span class='citation'>" + randomQuote.citation + "</span>";
+        }
+    
+    if(randomQuote.citation !== "")
+        {
+            author.innerHTML = author.innerHTML + "<span class='year'>" + randomQuote.date + "</span>";
+        }
 }
 
 
@@ -27,4 +45,4 @@ function printQuote()
 // when user clicks anywhere on the button, the "printQuote" function is called
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
-printQuote();
+//printQuote();
