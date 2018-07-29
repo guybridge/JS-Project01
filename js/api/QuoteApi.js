@@ -36,3 +36,11 @@ const quote5 =
     citation: "",
     date: "1995"
 };
+
+const quote6 = 
+{
+    quote: "There's no place like 127.0.0.1",
+    author: "Unknown",
+    citation: "",
+    date: ""
+};
