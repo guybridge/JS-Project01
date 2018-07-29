@@ -45,7 +45,7 @@ function printQuote()
 function changeBackgroundColour()
 {
     // Create an array of material colours
-    const colours = ["#03A9F4", "#E91E63", "#009688", "#607D8B", "#2196F3", "#4CAF50", "#3F51B5"]
+    const colours = ["#03A9F4", "#E91E63", "#009688", "#607D8B", "#2196F3", "#4CAF50", "#3F51B5"];
     let randomColour = Math.floor(Math.random() * colours.length);
     
     document.body.style.backgroundColor = colours[randomColour];
