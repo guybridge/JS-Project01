@@ -4,7 +4,40 @@
 
 
 // Create the array of quote objects and name it quotes
-let quotes = [quote1, quote2, quote3, quote4, quote5, quote6];
+let quotes = [
+    {
+    quote: "Maybourne, you are an idiot every day of the week. Why couldn’t you have taken one day off?",
+    source: "Samantha Carter",
+    citation: "Stargate SG-1",
+    date: "2003"
+}, {
+    quote: "The Setesh guard’s nose drips.",
+    source: "Teal'c",
+    citation: "Stargate SG-1",
+    date: "2002"
+}, {
+    quote: "I do not fear computers. I fear the lack of them.",
+    source: "Isaac Asimov",
+    citation: "",
+    date: ""
+}, {
+    quote: "How inappropriate to call this planet 'Earth', when it is clearly 'Ocean'",
+    source: "Arthur C. Clarke",
+    citation: "",
+    date: "1990"
+}, {
+    quote: "Science knows still practically nothing about the real nature of matter, energy, dimension, or time… But whatever the meaning and purpose of this universe, you are a legitimate part of it.",
+    source: "Gene Roddenberry",
+    citation: "",
+    date: "1999"
+}, {
+    quote: "There's no place like 127.0.0.1",
+    source: "Unknown",
+    citation: "",
+    date: ""
+}
+
+];
 
 // Create the getRandomQuote function and name it getRandomQuote
 function getRandomQuote()
